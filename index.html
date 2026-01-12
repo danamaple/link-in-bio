@@ -3,23 +3,16 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dan Rowe's Links </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
     <style>
     *{
       border: 1px red dashed;
-      text-align: center;
       }
-      .name-row{
-      border: dashed red 5px;
-      color:#ffffff
-      }
-      .main-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: dashed blue 5px;
-        max-width: 640px;
-        margin: auto;
-      }
+      
     html {
         min-height: 100%;
       }
@@ -28,22 +21,37 @@
         min-height: 100%;
         padding-top:40px;
         padding-bottom: 40px;
-        background: linear-gradient(60deg, #238aff, #91c5ff, #ffffff);
+        background-color: #f1f4ff;
+        font-family: "Playfair Display";
+      }
+      a{
+        border:none;
       }
       .item {
     width: 200px;
     padding: 20px;
+    border-radius: 1000px;
     border: solid red 5px;
     margin: 30px;
     background-color: #ffffff;
     }
-      .social-icons-row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        border: dashed red 5px;
-        margin-bottom: 20px;
+    .name-row{
+      border: dashed red 5px;
+      font-size: 60px;
+      font-weight: 100;
+      color:#0c1d2f;
+      text-align: center;
       }
+      .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: dashed blue 5px;
+        max-width: 640px;
+        margin: auto;
+      }
+     
         .social-icons {
       width: 200px;
       padding: 20px;
@@ -51,11 +59,10 @@
       margin: 30px;
       }
 
-      
-
       .avatar-image{
         width: 128px;
         height:128px;
+        border-radius:128px;
         object-fit: cover;
       }
       .icon-image{
@@ -68,37 +75,34 @@
         height:48px;
         object-fit: cover;
       }
-      a{
-        border:none;
-      }
+      
     </style>
   </head>
   <body> 
 
     <div class = "main-container">
       <div class = "name-row">
-          Dan Rowe!
+          Dan
         </div>
 
       <div class = "image-row">
           <img class="avatar-image" src="/Images/Dan Profile Picture.jpg">
         </div>
-        
+      
         <div class = "social-icons">
          <a href="https://www.linkedin.com/in/dan-rowe-2322bb181/" target="_blank"> 
-          <img class = "icon-image" src="/Images/Linkedin Logo.png" alt = "Linkedin">
+          <i class="fa-brands fa-linkedin-in"></i>
          </a> 
 
          <a href="https://github.com/danamaple" target="_blank"> 
-          <img class = "icon-image" src="/Images/GitHub_Logo.png" alt = "Github">
+          <i class="fa-brands fa-github"></i>
          </a> 
 
          <a href="https://www.instagram.com/rowedanny/?hl=en" target="_blank"> 
-          <img class = "icon-image" src="/Images/Instagram_Glyph_Gradient.png" alt = "Instagram">
+          <i class="fa-brands fa-instagram"></i>
          </a>
       </div>
 
-      <div>
       <div class = "links-column">
 
         <div class = "item">
