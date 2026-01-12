@@ -6,8 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
-
+    
     <style>
     *{
       border: 1px red dashed;
@@ -26,6 +29,7 @@
       }
       a{
         border:none;
+        text-decoration:none;
       }
       .item {
     width: 200px;
@@ -56,7 +60,17 @@
       width: 200px;
       padding: 20px;
       border: solid red 5px;
+      font-size: 40 px;
+      color: #0f1d55;
       margin: 30px;
+      text-align: center;
+      }
+
+      .item-description {
+        font-size: 40 px;
+        color: #0f1d55;
+        font-family: "playfair";
+        text-align: center;
       }
 
       .avatar-image{
@@ -65,15 +79,11 @@
         border-radius:128px;
         object-fit: cover;
       }
-      .icon-image{
-        width: 48px;
-        height:48px;
-        object-fit: cover;
-      }
+      
       .link-image{
         width: 120px;
         height:48px;
-        object-fit: cover;
+        object-fit: contain;
       }
       
     </style>
@@ -110,12 +120,18 @@
          <a href="https://www.inzollo.com/" target="_blank"> 
           <img class = "link-image" src="/Images/Inzollo.png" alt = "Inzollo">
          </a>
+         <div class = "item-description">
+          Manage your operation with one platform 
+         </div>
         </div>
 
         <div class = "item">
           <a href="https://drowe.substack.com/?utm_source=navbar&utm_medium=web&r=21vqkf" target="_blank"> 
           <img class = "link-image" src="/Images/Offworld.png" alt = "Offworld">
          </a>
+         <div class = "item-description">
+          Essays, stories, and pets.
+         </div>
          </div>
 
       </div>
