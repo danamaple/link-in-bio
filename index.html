@@ -12,18 +12,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     
     <style>
-    *{
-      border: 1px red dashed;
-      }
-      
+    
     html {
         min-height: 100%;
       }
 
       body {
         min-height: 100%;
-        padding-top:40px;
-        padding-bottom: 40px;
+        padding-top:10px;
+        padding-bottom: 10px;
         background-color: #f1f4ff;
         font-family: "Playfair Display";
       }
@@ -32,26 +29,25 @@
         text-decoration:none;
       }
       .item {
-    width: 200px;
-    padding: 20px;
-    border-radius: 1000px;
-    border: solid red 5px;
-    margin: 30px;
+    display: block;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 20px;
     background-color: #ffffff;
+    text-align: center;
     }
     .name-row{
-      border: dashed red 5px;
       font-size: 60px;
       font-weight: 100;
-      color:#0c1d2f;
+      color:#112a8d;
       text-align: center;
       }
       .main-container{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
-        border: dashed blue 5px;
         max-width: 640px;
         margin: auto;
       }
@@ -59,13 +55,15 @@
         .social-icons {
       width: 200px;
       padding: 20px;
-      border: solid red 5px;
-      font-size: 40 px;
-      color: #0f1d55;
-      margin: 30px;
+      font-size: 40px;
+      margin: 0px;
       text-align: center;
       }
-
+      .social-icons a,
+      .social-icons a:visited,
+      .social-icons a:hover {
+        color: #112a8d; 
+      }
       .item-description {
         font-size: 40 px;
         color: #0f1d55;
@@ -82,7 +80,7 @@
       
       .link-image{
         width: 120px;
-        height:48px;
+        max-height:48px;
         object-fit: contain;
       }
       
@@ -92,7 +90,7 @@
 
     <div class = "main-container">
       <div class = "name-row">
-          Dan
+          Dan Rowe
         </div>
 
       <div class = "image-row">
@@ -115,24 +113,19 @@
 
       <div class = "links-column">
 
-        <div class = "item">
-
-         <a href="https://www.inzollo.com/" target="_blank"> 
-          <img class = "link-image" src="/Images/Inzollo.png" alt = "Inzollo">
-         </a>
-         <div class = "item-description">
-          Manage your operation with one platform 
+        <a class="item" href="https://www.inzollo.com/" target="_blank">
+        <img class="link-image" src="/Images/Inzollo.png" alt="Inzollo">
+        <div class="item-description">
+         Software for operators
          </div>
-        </div>
+        </a>
 
-        <div class = "item">
-          <a href="https://drowe.substack.com/?utm_source=navbar&utm_medium=web&r=21vqkf" target="_blank"> 
+        <a class = "item" href="https://drowe.substack.com/?utm_source=navbar&utm_medium=web&r=21vqkf" target="_blank"> 
           <img class = "link-image" src="/Images/Offworld.png" alt = "Offworld">
-         </a>
          <div class = "item-description">
-          Essays, stories, and pets.
+          Writing portfolio
          </div>
-         </div>
+         </a>
 
       </div>
     </div>
