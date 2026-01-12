@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dan Rowe's Links </title>
     <style>
     *{
@@ -10,25 +10,39 @@
       }
       .name-row{
       border: dashed red 5px;
+      color:#ffffff
       }
       .main-container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         border: dashed blue 5px;
+        max-width: 640px;
+        margin: auto;
       }
-      .text {
+    html {
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100%;
+        padding-top:40px;
+        padding-bottom: 40px;
+        background: linear-gradient(60deg, #238aff, #91c5ff, #ffffff);
+      }
+      .item {
     width: 200px;
     padding: 20px;
     border: solid red 5px;
     margin: 30px;
+    background-color: #ffffff;
     }
       .social-icons-row{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         border: dashed red 5px;
+        margin-bottom: 20px;
       }
         .social-icons {
       width: 200px;
@@ -36,10 +50,8 @@
       border: solid red 5px;
       margin: 30px;
       }
-      body {
-        padding-top:40px;
-        padding-bottom: 40px;
-      }
+
+      
 
       .avatar-image{
         width: 128px;
@@ -89,14 +101,14 @@
       <div>
       <div class = "links-column">
 
-        <div class = "links">
+        <div class = "item">
 
          <a href="https://www.inzollo.com/" target="_blank"> 
           <img class = "link-image" src="/Images/Inzollo.png" alt = "Inzollo">
          </a>
         </div>
 
-        <div class = "links">
+        <div class = "item">
           <a href="https://drowe.substack.com/?utm_source=navbar&utm_medium=web&r=21vqkf" target="_blank"> 
           <img class = "link-image" src="/Images/Offworld.png" alt = "Offworld">
          </a>
