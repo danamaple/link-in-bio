@@ -8,15 +8,15 @@
       border: 1px red dashed;
       text-align: center;
       }
-      .name{
+      .name-row{
       border: dashed red 5px;
       }
-      .text-container{
+      .main-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: dashed red 5px;
+        border: dashed blue 5px;
       }
       .text {
     width: 200px;
@@ -24,13 +24,13 @@
     border: solid red 5px;
     margin: 30px;
     }
-      .button-container{
+      .social-icons-row{
         display: flex;
         flex-direction: row;
         justify-content: center;
         border: dashed red 5px;
       }
-        .button {
+        .social-icons {
       width: 200px;
       padding: 20px;
       border: solid red 5px;
@@ -38,46 +38,48 @@
       }
     </style>
   </head>
-  <body>
-    <div class = "name">
-        Dan Rowe!
+  <body> 
+
+    <div class = "main-container">
+      <div class = "name-row">
+          Dan Rowe!
+        </div>
+
+      <div class = "image-row">
+          Image goes here.
+        </div>
+
+      <div class = "social-icons-row">
+        
+        <div class = "social-icons">
+          Linkedin ?
+        </div>
+
+        <div class = "social-icons">
+          Email
+        </div>
+
+        <div class = "social-icons">
+          Instagram
+        </div>
+
       </div>
+      <div class = "links-column">
 
-    <div class = "name">
-        Image goes here.
+        <div class="text">
+          Inzollo
+        </div>
+
+        <div class="text">
+          Offworld
+        </div>
+
+        <div class="text">
+          Github
+        </div>
+
       </div>
-
-    <div class = "button-container">
-      
-      <div class = "button">
-        Linkedin
-      </div>
-
-      <div class = "button">
-        Email
-      </div>
-
-      <div class = "button">
-        Instagram
-      </div>
-
-    </div>
-    <div class = "text-container">
-
-      <div class="text">
-        Inzollo
-      </div>
-
-      <div class="text">
-        Offworld
-      </div>
-
-      <div class="text">
-        Github
-      </div>
-
     </div>
   </body>
-
 
 </html>
