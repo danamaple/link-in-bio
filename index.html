@@ -36,6 +36,29 @@
       border: solid red 5px;
       margin: 30px;
       }
+      body {
+        padding-top:40px;
+        padding-bottom: 40px;
+      }
+
+      .avatar-image{
+        width: 128px;
+        height:128px;
+        object-fit: cover;
+      }
+      .icon-image{
+        width: 48px;
+        height:48px;
+        object-fit: cover;
+      }
+      .link-image{
+        width: 120px;
+        height:48px;
+        object-fit: cover;
+      }
+      a{
+        border:none;
+      }
     </style>
   </head>
   <body> 
@@ -46,34 +69,38 @@
         </div>
 
       <div class = "image-row">
-          <img src="/Images/Dan Profile Picture.jpg">
+          <img class="avatar-image" src="/Images/Dan Profile Picture.jpg">
         </div>
-
-      <div class = "social-icons-row">
         
         <div class = "social-icons">
          <a href="https://www.linkedin.com/in/dan-rowe-2322bb181/" target="_blank"> 
-          <img src="/Images/Linkedin Logo.png" alt = "Linkedin">
+          <img class = "icon-image" src="/Images/Linkedin Logo.png" alt = "Linkedin">
          </a> 
 
          <a href="https://github.com/danamaple" target="_blank"> 
-          <img src="/Images/GitHub_Logo.png" alt = "Github">
+          <img class = "icon-image" src="/Images/GitHub_Logo.png" alt = "Github">
          </a> 
 
          <a href="https://www.instagram.com/rowedanny/?hl=en" target="_blank"> 
-          <img src="/Images/Instagram_Glyph_Gradient.png" alt = "Instagram">
+          <img class = "icon-image" src="/Images/Instagram_Glyph_Gradient.png" alt = "Instagram">
          </a>
-
       </div>
+
+      <div>
       <div class = "links-column">
 
-         <a href="https://www.inzollo.com/" target="_blank"> 
-          <img src="/Images/Inzollo.png" alt = "Inzollo">
-         </a>
+        <div class = "links">
 
-          <a href="https://drowe.substack.com/?utm_source=navbar&utm_medium=web&r=21vqkf" target="_blank"> 
-          <img src="/Images/Offworld.png" alt = "Offworld">
+         <a href="https://www.inzollo.com/" target="_blank"> 
+          <img class = "link-image" src="/Images/Inzollo.png" alt = "Inzollo">
          </a>
+        </div>
+
+        <div class = "links">
+          <a href="https://drowe.substack.com/?utm_source=navbar&utm_medium=web&r=21vqkf" target="_blank"> 
+          <img class = "link-image" src="/Images/Offworld.png" alt = "Offworld">
+         </a>
+         </div>
 
       </div>
     </div>
